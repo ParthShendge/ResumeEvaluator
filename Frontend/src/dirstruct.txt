@@ -1,0 +1,11 @@
+Common src/ Folder Structure
+A widely adopted, scalable structure groups files by type and functionality: 
+
+    /assets     : Static files such as images, fonts, and global styles.
+    /components : Reusable UI components used across the application (e.g., Button, Modal, Navbar). These may be further divided into subfolders (e.g., common, forms, layouts).
+    /hooks      : Custom React hooks to encapsulate and reuse logic across different components.
+    /pages      : Components that correspond to specific routes or views in your application, often combining components from other folders.
+    /lib        : Facades or abstractions for third-party libraries (e.g., Axios configuration).
+    /services or /api: Code for handling API calls and interactions with external services, separating business logic from UI components.
+    /utils      : Stand-alone utility functions and helpers that are pure and can be reused globally (e.g., date formatters, validation schemas).
+    /context or /store: Files related to global state management using the React Context API, Redux, Zustand, etc.. 
